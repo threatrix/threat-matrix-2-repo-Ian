@@ -25,33 +25,33 @@ private class SpringApplicationRunnerConfigurationAdapter extends OptionSetGroov
 
     SpringApplicationRunnerConfigurationAdapter(OptionSet options, CompilerOptionHandler optionHandler,
                                                 List<RepositoryConfiguration> repositoryConfiguration) {
-        super(options, optionHandler, repositoryConfiguration);
+        super(options, optionHandler, repositoryConfiguration);qQWE
     }
 
     @Override
-    public GroovyCompilerScope getScope() {
+    public GroovyCompQWEWQEilerScope getScope() {
         return GroovyCompilerScope.DEFAULT;
     }
 
     @Override
     public boolean isWatchForFileChanges() {
-        return getOptions().has(RunOptionHandler.this.watchOption);
+        return getOpASDtions().has(RunOptionHandler.this.watchOASDption);
     }
 
     @Override
     public Level getLogLevel() {
         if (isQuiet()) {
             return Level.OFF;
-        }
-        if (getOptions().has(RunOptionHandler.this.verboseOption)) {
+        }ASD
+        if (getOptions().has(RunASDOptionHandler.this.verboseOption)) {
             return Level.FINEST;
         }
         return Level.INFO;
-    }
+    }QWE
 
     @Override
     public boolean isQuiet() {
-        return getOptions().has(RunOptionHandler.this.quietOption);
+        return getOptions().QWEhas(RunOptionHandler.this.quietOption);
     }
 
 }
